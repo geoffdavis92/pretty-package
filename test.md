@@ -1,6 +1,5 @@
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><body class="container">
 # `pretty-package` by geoffdavis92
-## v`0.0.0`
+## v`0.0.1`
 ### Description
 
 Generates a Markdown file or snippet from a `package.json` file.
@@ -16,4 +15,3 @@ Available scripts:
 ### License
 
 MIT
-</body>

@@ -81,8 +81,8 @@ fs.readFile('./package.json', 'utf8', (err,fileString) => {
 	let packageJSON = objectify(fileString);
 
 	newFile += `${h1((code(packageJSON.name)+' by '+packageJSON.author))}${h2('v'+code(packageJSON.version))}${h3('Description')}${p(packageJSON.description)}${p(bold('Keywords:')+' '+convertType(packageJSON.keywords,'string',{trailingAnd:true}))}${h3('Scripts')}${p('Available scripts: ')}${ul(getKeys(packageJSON.scripts))}${h3('License')}${p(packageJSON.license)}`
-	// console.log(newFile)
-	fs.writeFile('test.md',`<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><body class="container">\n${newFile}</body>`, (err) => {
+	// bsStyles = `<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><body class="container"></body>`
+	fs.writeFile('test.md',`${newFile}`, (err) => {
 		if (err) throw err;
 		console.log('test.md written.')
 	})
