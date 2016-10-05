@@ -1,0 +1,21 @@
+{
+  "name": "pretty-package",
+  "version": "0.0.0",
+  "bin": "./bin/pp.sh",
+  "description": "Generates a Markdown file or snippet from a `package.json` file.",
+  "main": "index.js",
+  "scripts": {
+    "md": "echo '<link href=\"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css\" rel=\"stylesheet\"><body class=\"container\">' > test.html; python -m markdown test.md >> test.html; echo '</body>' >> test.html",
+    "pp": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Pretty",
+    "Package",
+    "package.json",
+    "Markdown",
+    "NPM"
+  ],
+  "author": "geoffdavis92",
+  "license": "MIT"
+}

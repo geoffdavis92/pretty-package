@@ -1,0 +1,5 @@
+# pretty-package ignores... 
+node_modules 
+test.html 
+npm-debug.log 
+.DS_Store
