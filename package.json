@@ -1,6 +1,6 @@
 {
   "name": "pretty-package",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "bin": "./bin/pp.sh",
   "description": "Generates a Markdown file or snippet from a `package.json` file.",
   "main": "index.js",
